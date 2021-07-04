@@ -1,0 +1,74 @@
+ <!--header-->
+ <%- include('header')%>
+        
+        
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Products</a></li>
+                    <li class="breadcrumb-item active">product list</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        
+        <!-- Product List Start -->
+        <div class="product-view">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="product-short">
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sắp sếp theo giá</a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <a href="#" class="dropdown-item">thấp -> cao</a>
+                                                    <a href="#" class="dropdown-item">cao -> thấp</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                     
+                            <%-dstimkiem%>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="sidebar-widget image">
+                            <h2 class="title">SẢN PHẨM MỚI NHẤT</h2>
+                            <a href="#">
+                                <img src="../img/category-1.jpg" alt="Image">
+                            </a>
+                        </div>
+                        
+                        
+                        <div class="sidebar-widget tag">
+                            <h2 class="title">TỪ KHÓA</h2>
+                            <a href="#">Lorem ipsum</a>
+                            <a href="#">Vivamus</a>
+                            <a href="#">Phasellus</a>
+                            <a href="#">pulvinar</a>
+                            <a href="#">Curabitur</a>
+                            <a href="#">Fusce</a>
+                            <a href="#">Sem quis</a>
+                            <a href="#">Mollis metus</a>
+                            <a href="#">Sit amet</a>
+                            <a href="#">Vel posuere</a>
+                            <a href="#">orci luctus</a>
+                            <a href="#">Nam lorem</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product List End -->
+        
+        
+        <!-- Footer Start -->
+        <%- include('footer')%>

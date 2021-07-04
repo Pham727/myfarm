@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Farm- Nâng tầm nông sản Việt</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Bootstrap Ecommerce Template" name="keywords">
+        <meta content="Bootstrap Ecommerce Template Free Download" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript">
+        function kiemTraDangKy(){
+		var thongbao=document.getElementById("thongbao");
+		var thongbao1=document.getElementById("thongbao1");
+		var thongbao2=document.getElementById("thongbao2");
+		var thongbao3=document.getElementById("thongbao3");
+		var thongbao4=document.getElementById("thongbao4");
+		var thongbao5=document.getElementById("thongbao5");
+        var thongbao5=document.getElementById("thongbao6");
+		var thongbao5=document.getElementById("thongbao7");
+
+		if(frmDangKy.ho_ten.value==""){
+			thongbao.style.display="block";
+			thongbao.style.color="red";
+			return false;
+		}
+		else{
+			thongbao.style.display="none";
+		}
+
+        if(frmDangKy.ten_dn.value==""){
+			thongbao1.style.display="block";
+			thongbao1.style.color="red";
+			return false;
+		}
+		else{
+			thongbao1.style.display="none";
+		}
+
+        if(frmDangKy.email.value==""){
+				thongbao2.style.display="block";
+				thongbao2.style.color="red";
+				return false;
+			}
+
+			var email = document.getElementById("email");
+			var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+			if (!filter.test(frmDangKy.email.value)) {
+				thongbao2.style.display="block";
+				thongbao2.style.color="red";
+				return false;
+			}
+			else{
+				thongbao2.style.display="none";
+			}
+
+        if(frmDangKy.dia_chi.value==""){
+			thongbao3.style.display="block";
+			thongbao3.style.color="red";
+			return false;
+		}
+		else{
+			thongbao3.style.display="none";
+		}
+
+        if(frmDangKy.so_dt.value==""){
+			thongbao4.style.display="block";
+			thongbao4.style.color="red";
+			return false;
+		}
+		else{
+			thongbao4.style.display="none";
+		}
+
+        if(frmDangKy.mat_khau.value==""){
+			thongbao5.style.display="block";
+			thongbao5.style.color="red";
+			return false;
+		}
+		else{
+			thongbao5.style.display="none";
+		}
+
+
+		if(frmDangKy.mat_khau1.value==""){
+			thongbao6.style.display="block";
+			thongbao6.style.color="red";
+			return false;
+		}
+		else{
+			thongbao6.style.display="none";
+		}
+
+		if(frmDangKy.mat_khau.value!=frmDangKy.mat_khau1.value){
+			thongbao7.style.display="block";
+			thongbao7.style.color="red";
+			return false;
+		}
+		else{
+			thongbao7.style.display="none";
+		}
+
+		return true;
+    }
+        </script>
+    </head>
+
+    <body>
+        <!-- Top Header Start -->
+        <div class="top-header">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href="">
+                                <img src="img/logo.png" alt="Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="search">
+                            <form name="form1" method="post" action="search">
+                                <input name="tensp" id="tensp" type="text" placeholder="Search">
+                                <button><i class="fa fa-search"></i></button>
+                             </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="user">
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Account</a>
+                                <div class="dropdown-menu">
+                                    <a href="/dangnhap" class="dropdown-item">Đăng nhập</a>
+                                    <a href="/dangki" class="dropdown-item">Đăng kí</a>
+                                </div>
+                            </div>
+                            <div class="cart">
+                                <i class="fa fa-cart-plus"></i>
+                                <span>(0)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+        
+        
+        <!-- Header Start -->
+        <div class="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="#" class="navbar-brand">MENU</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav m-auto">
+                            <a href="/" class="nav-item nav-link active">Home</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Products</a>
+                                <div class="dropdown-menu">
+                                    <a href="/product" class="dropdown-item">ALL Product</a>
+                                    <a href="/1" class="dropdown-item">Fruit</a>
+                                    <a href="/2" class="dropdown-item">Vegetables</a>
+                                    <a href="/3" class="dropdown-item">Bean</a>
+                                    <a href="/cart" class="dropdown-item">Cart</a>
+                                    <a href="/wishlist" class="dropdown-item">Wishlist</a>
+                                    <a href="/checkout" class="dropdown-item">Checkout</a>                                   
+                                </div>
+                            </div>
+                            <a href="/about" class="nav-item nav-link">About Us</a>
+                            <a href="/contact" class="nav-item nav-link">Contact Us</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Header End -->
+        
+        
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">User</a></li>
+                    <li class="breadcrumb-item active">Register</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        
+        <!-- Login Start  -->
+        <div class="row">
+            <div class="col-md-6">
+                    <div class="login">
+                        <div class="container clearfix">
+                            <div class="form registration">
+                                <a class="logo" href="">
+                                    <img src="img/logo.png" alt="Logo" />
+                                </a>
+                                <form action="/dangki" method="post"  name="frmDangKy">
+                                    <p>
+                                        <label>Name<span>*</span></label>
+                                        <input name="ho_ten" id="ho_ten"type="text" required>
+                                        <p id="thongbao" style="display:none">Vui lòng nhập họ và tên</p>
+
+                                    </p>
+                                    <p>    
+                                        <label>User name<span>*</span></label>
+                                        <input name="ten_dn" id="ten_dn" type="text" required>
+                                        <p id="thongbao1" style="display:none">Vui lòng nhập username</p>
+                                    </p>
+                                    <p> 
+                                        <label>Email address<span>*</span></label>
+                                        <input name="email" id="email" type="email" required>
+                                        <p id="thongbao2" style="display:none">Email không hợp lệ</p>
+                                    </p>
+                                    <p> 
+                                        <label>Address<span>*</span></label>
+                                        <input name="dia_chi" id="dia_chi" type="text" required>
+                                        <p id="thongbao3" style="display:none">Vui lòng nhập địa chỉ</p>
+
+                                    </p>
+                                    <p> 
+                                        <label>Phone<span>*</span></label>
+                                        <input name="so_dt" id="so_dt" type="text" required>
+                                        <p id="thongbao4" style="display:none">Vui lòng nhập số điện thoại</p>
+                                    </p>
+                                    <p> 
+                                        <label>Password<span>*</span></label>
+                                        <input name="mat_khau" id="mat_khau" type="password" required>
+                                        <p id="thongbao5" style="display:none">Vui lòng nhập password</p>
+                                    </p>
+                                    <p> 
+                                        <label>Again password<span>*</span></label>
+                                        <input name="mat_khau1" id="mat_khau1" type="password" required>
+                                        <p id="thongbao6" style="display:none">Nhập lại password</p>
+							            <p id="thongbao7" style="display:none">Password nhập không chính xác.Mời bạn nhập lại password</p>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <a href="/login">Have an account</a>
+                                        </label>
+                                        <input type="submit" name="submit" value="Signup" onclick="return kiemTraDangKy()" />
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="LoginTK" style="margin-top: 150px"><label for="DK">TẠO TÀI KHOẢN</label></div>
+                    <div class="motaDN">Tạo tài khoản để theo dõi đơn hàng, lưu danh sách sản phẩm yêu thích, 
+                        nhận nhiều ưu đãi hấp dẫn...</div>
+                    <img src="../img/graphic-map.png" alt="">
+                </div>
+             </div>   
+        <!-- Login End -->
+         
+        <!-- Footer Start -->
+        <%- include('footer')%>

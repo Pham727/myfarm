@@ -1,0 +1,62 @@
+        <!--header-->
+        <%- include('header')%>
+        <!-- Breadcrumb Start -->
+        <div class="breadcrumb-wrap">
+            <div class="container">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">User</a></li>
+                    <li class="breadcrumb-item active">Login</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Breadcrumb End -->
+        
+        
+        <!-- Login Start  -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="login">
+                    <div class="container clearfix">
+                        <div class="form login">
+                            <a class="logo" href="">
+                                <img src="../img/logo.png" alt="Logo" />
+                            </a>
+                            <form action="/dangnhap" method="post"  name="frmDanhNhap">
+                                <!--<p>
+                                    <label>Username or email address<span>*</span></label>
+                                    <input type="text" name ="ho_ten" id="ho_ten" required>
+                                </p>-->
+                                <p>
+                                    <label>Username<span>*</span></label>
+                                    <input name="ho_ten" id="ho_ten"type="text" required>
+                                </p>
+                                <p>
+                                    <label>Password<span>*</span></label>
+                                    <input type="password" name="mat_khau" id="mat_khau" required>
+                                </p>
+                                <p>
+                                    <label>
+                                        <a href="/resset">Forgot password?</a>
+                                        <a href="/dangki">Create an account</a>
+                                    </label>
+                                    <input type="submit" value="Login" />
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-5">
+            <div class="LoginTK"><label for="DN">Đăng nhập</label></div>
+            <div class="motaDN">Đăng nhập để theo dõi đơn hàng, lưu 
+                danh sách sản phẩm yêu thích, nhận
+            nhiều ưu đãi hấp dẫn.</div>
+            <img src="../img/graphic-map.png" alt="">
+        </div>
+    </div>
+        <!-- Login End -->
+        
+        
+        <!-- Footer Start -->
+        <%- include('footer')%>
