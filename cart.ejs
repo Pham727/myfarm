@@ -1,0 +1,72 @@
+ <!--header-->
+ <%- include('header')%>
+      <!-- Breadcrumb Start -->
+      <div class="breadcrumb-wrap">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Products</a></li>
+                <li class="breadcrumb-item active">Cart</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Breadcrumb End -->
+    <!--Nhúng js xóa sản phẩm trong giỏ hàng-->
+    <script src="../js/xoadonhang.js"></script>
+    <script>
+    function cong(ten){
+        var giatri=document.getElementById(ten).value;
+        giatri++;
+        document.getElementById(ten).value=giatri;
+    }
+    </script>
+    
+    <!-- Cart Start -->
+    <!--<form name="form1" method="post" action="/capnhapgiohang">-->
+    <div class="cart-page"> 
+        <form name="frmgiohang" method="post" action="/capnhapgiohang">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Ảnh</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Đơn giá</th>
+                                    <th>Số lượng</th>
+                                    <th>Tổng tiền</th>
+                                    <th>Xóa</th>
+                                </tr>
+                            </thead>
+                                <%-chitietgiohang%> 
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7" style="margin-left: 475px;">
+                    <div class="cart-summary">
+                        <div class="cart-content">
+                            <h3>Tổng giỏ hàng</h3>
+                            <!--<p>Sub Total<span>$22</span></p>
+                            <p>Shipping Cost<span>$1</span></p>
+                            <h4>Grand Total<span>$23</span></h4>-->
+                            <%-tonggiohang%>
+                        </div>
+                        <div class="cart-btn">
+                            <button type="submit" >Cập nhật</button>
+                            <button><a href="/checkout">Thanh toán</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    <!--</form>-->
+    <!-- Cart End -->
+   
+    <!-- Footer Start -->
+     <%- include('footer')%>
